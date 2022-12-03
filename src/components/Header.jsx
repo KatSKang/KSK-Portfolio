@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 export default function Header() {
     return(
-    <div className="w-full h-100 text-gray-200 my-12 justify-center text-center">
+    <div className="w-full h-100 text-gray-200 mb-10 justify-center text-center">
         <div className="">
                 <h1 className="text-8xl my-2 font-bold text-teal-500">Kathy Kang</h1>
                 <h2 className="text-3xl my-4">Full Stack Developer</h2>
