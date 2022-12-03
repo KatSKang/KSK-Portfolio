@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand&display=swap');
 
 @layer base {
     html {
-      font-family: Raleway, system-ui, sans-serif;
+      font-family: Poppins, system-ui, sans-serif;
     }
   }
 
-  img{
-    width: 250px;
-    height: 250px;
+  #profile-img {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    outline: 8px;
+    outline-style:solid;
+    outline-color: rgb(20, 184, 166);
+  }
+
+  #card-img {
+    max-width: 800px;
+    max-height: 800px;
   }
 
   * {
-    background-color: rgb(17 24 39);
+    background-color: rgb(11, 16, 27);
   }

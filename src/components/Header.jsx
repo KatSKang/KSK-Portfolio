@@ -1,15 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 
 export default function Header() {
     return(
-    <div className="w-full h-100 text-white m-8">
+    <div className="w-full h-100 text-gray-200 my-12 justify-center text-center">
         <div className="">
-            <h1 className="text-8xl text-center m-2">Kathy Kang</h1>
+                <h1 className="text-8xl my-2 font-bold text-teal-500">Kathy Kang</h1>
+                <h2 className="text-3xl my-4">Full Stack Developer</h2>
         </div>
-        <div className="flex justify-center">
-            <SocialIcon url="https://github.com/katskang" bgColor="#E2E2E2" />
+        <div className="flex justify-center gap-12">
+                <SocialIcon url="https://github.com/katskang" bgColor="#E2E2E2" style={{ height: 40, width: 40 }} />
+                <SocialIcon url="https://www.linkedin.com/in/ks-kang/" bgColor="#E2E2E2" style={{ height: 40, width: 40 }} />
+                <SocialIcon url="https://mailto:katsomsanith@gmail.com" bgColor="#E2E2E2" style={{ height: 40, width: 40 }} />
         </div>
         
     </div>

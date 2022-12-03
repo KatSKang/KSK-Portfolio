@@ -1,12 +1,12 @@
 
 export default function Navbar() {
   return(
-    <nav class="flex flex-col justify-between text-center py-4 px-6 bg-gray-900 text-white w-full ">
+    <nav className="flex justify-center mr-auto text-center py-4 px-6 text-white w-full ">
       <div>
-        <a href="/about" class="text-lg no-underline hover:text-green-500 ml-2 mr-2">About Me</a>
-        <a href="/portfolio" class="text-lg no-underline hover:text-green-500  ml-2 mr-2">Portfolio</a>
-        <a href="/resume" class="text-lg no-underline hover:text-green-500  ml-2 mr-2">Resume</a>
-        <a href="/contact" class="text-lg no-underline hover:text-green-500 ml-2 mr-2">Contact</a>
+        <a href="/about" className="text-lg no-underline hover:text-teal-500 mx-2">About Me</a>
+        <a href="/portfolio" className="text-lg no-underline hover:text-teal-500 mx-2">Portfolio</a>
+        <a href="/resume" className="text-lg no-underline hover:text-teal-500 mx-2">Resume</a>
+        <a href="/contact" className="text-lg no-underline hover:text-teal-500 mx-2">Contact</a>
       </div>
     </nav>
       )
