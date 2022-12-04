@@ -5,7 +5,7 @@ export default function About() {
     <div className="my-20">
       <div className="grid justify-items-center">
         <img
-          src="public/assets/images/profile2.jpg"
+          src="./assets/images/profile2.jpg"
           id="profile-img"
           alt="profliepic"></img>
       </div>
