@@ -1,4 +1,4 @@
-# Kathy Kang Professional Portofolio
+# Kathy Kang Professional Portfolio
 
   ## Description
 
