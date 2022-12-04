@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="flex justify-center mr-auto text-center py-4 px-6 text-white w-full">
           <p>
             <Link
-              to="/about"
+              to="/"
               className="text-lg no-underline hover:text-teal-500 mx-2">
               About Me
             </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
       <Header />
 
       <Routes>
-        <Route path="/about" element={<About />}>
+        <Route path="/" element={<About />}>
           {" "}
         </Route>
         <Route path="/portfolio" element={<Portfolio />}>
