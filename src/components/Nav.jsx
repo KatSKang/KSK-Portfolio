@@ -14,28 +14,28 @@ export default function Navbar() {
         <div className="flex justify-center mr-auto text-center py-4 px-6 text-white w-full">
           <p>
             <Link
-              to="/"
+              to="KKang-React-Portfolio/"
               className="text-lg no-underline hover:text-teal-500 mx-2">
               About Me
             </Link>
           </p>
           <p>
             <Link
-              to="/portfolio"
+              to="KKang-React-Portfolio/portfolio"
               className="text-lg no-underline hover:text-teal-500 mx-2">
               Portfolio
             </Link>
           </p>
           <p>
             <Link
-              to="/resume"
+              to="KKang-React-Portfolio/resume"
               className="text-lg no-underline hover:text-teal-500 mx-2">
               Resume
             </Link>
           </p>
           <p>
             <Link
-              to="/contact"
+              to="KKang-React-Portfolio//contact"
               className="text-lg no-underline hover:text-teal-500 mx-2">
               Contact
             </Link>
@@ -46,16 +46,16 @@ export default function Navbar() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<About />}>
-          {" "}
-        </Route>
-        <Route path="/portfolio" element={<Portfolio />}>
-          {" "}
-        </Route>
-        <Route path="/resume" element={<Resume />}></Route>
-        <Route path="/contact" element={<Contact />}>
-          {" "}
-        </Route>
+        <Route path="/KKang-React-Portfolio/" element={<About />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/portfolio"
+          element={<Portfolio />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/resume"
+          element={<Resume />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/contact"
+          element={<Contact />}></Route>
       </Routes>
     </>
   );
