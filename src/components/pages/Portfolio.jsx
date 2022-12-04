@@ -11,7 +11,7 @@ export default function Portfolio() {
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
-            src="concerteer.png"
+            src="https://user-images.githubusercontent.com/30813052/185979386-86d19788-df9c-4d08-bf06-4b654f572165.png"
             id="card-img"
             alt="concerteer img"></img>
           <div className="px-6 py-4">
@@ -54,7 +54,7 @@ export default function Portfolio() {
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
-            src="meowwoof homepage.png"
+            src="https://katskang.github.io/Portfolio/assets/images/meowwoof%20homepage.png"
             id="card-img"
             alt="MeowWoof img"></img>
           <div className="px-6 py-4">
@@ -191,7 +191,7 @@ export default function Portfolio() {
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
-            src="code quiz.png"
+            src="https://user-images.githubusercontent.com/105574653/182054630-480edf3f-c280-443a-a217-04640d56df51.png"
             id="card-img"
             alt="code quiz img"></img>
           <div className="px-6 py-4">
