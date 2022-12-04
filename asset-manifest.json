@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/KKang-React-Portfolio/static/css/main.04be66f3.css",
-    "main.js": "/KKang-React-Portfolio/static/js/main.298c81b8.js",
+    "main.js": "/KKang-React-Portfolio/static/js/main.2ec60cec.js",
     "static/media/Kathy Kang 2022 Resume.pdf": "/KKang-React-Portfolio/static/media/Kathy Kang 2022 Resume.f59abb81347e2a28bdbc.pdf",
     "index.html": "/KKang-React-Portfolio/index.html",
     "main.04be66f3.css.map": "/KKang-React-Portfolio/static/css/main.04be66f3.css.map",
-    "main.298c81b8.js.map": "/KKang-React-Portfolio/static/js/main.298c81b8.js.map"
+    "main.2ec60cec.js.map": "/KKang-React-Portfolio/static/js/main.2ec60cec.js.map"
   },
   "entrypoints": [
     "static/css/main.04be66f3.css",
-    "static/js/main.298c81b8.js"
+    "static/js/main.2ec60cec.js"
   ]
 }
