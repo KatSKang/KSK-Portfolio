@@ -46,10 +46,16 @@ export default function Navbar() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<About />}></Route>
-        <Route path="portfolio" element={<Portfolio />}></Route>
-        <Route path="resume" element={<Resume />}></Route>
-        <Route path="contact" element={<Contact />}></Route>
+        <Route path="/KKang-React-Portfolio/" element={<About />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/portfolio"
+          element={<Portfolio />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/resume"
+          element={<Resume />}></Route>
+        <Route
+          path="/KKang-React-Portfolio/contact"
+          element={<Contact />}></Route>
       </Routes>
     </>
   );
