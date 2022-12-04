@@ -4,10 +4,7 @@ export default function About() {
   return (
     <div className="my-20">
       <div className="grid justify-items-center">
-        <img
-          src="./assets/images/profile2.jpg"
-          id="profile-img"
-          alt="profliepic"></img>
+        <img src="profile2.jpg" id="profile-img" alt="profliepic"></img>
       </div>
       <div className="flex mx-6 my-12 justify-center text-gray-200">
         <div className="w-1/2 text-xl sm-w-full">
