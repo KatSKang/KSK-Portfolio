@@ -20,7 +20,7 @@ export default function Portfolio() {
               Resumade
             </div>
             <p className="text-gray-200 text-base ">
-              A resume generator application. After signing up or logging, the user will be able to access the dashboard where they can add, edit or download their resume. To add a new resume, users can simply click on the 'new resume' button and is prompted to fill out the forms. Their resume will be generated at the end and saved to their account, where it can be accessed again through the dashboard.
+              A resume generator application. After signing up or logging, the user will be able to access the dashboard where they can add, edit or download their resume. To add a new resume, users can simply click on the 'new resume' button and is prompted to fill out the forms. Their resume will be generated at the end and automatically saved. The user will also have the option to download the file for $5. The resume will be saved to their account, where it can be accessed again through the dashboard.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
