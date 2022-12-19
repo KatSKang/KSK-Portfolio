@@ -1,5 +1,6 @@
 import React from "react";
-//import ReactDOM from "react-dom/client";
+import resumade from "../../assets/images/resumade.jpeg"
+
 
 export default function Portfolio() {
   return (
@@ -8,6 +9,46 @@ export default function Portfolio() {
         My Projects
       </h1>
       <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <div className="max-w-s overflow-hidden rounded border border-gray-800">
+          <img
+            className="w-full"
+            src={resumade}
+            id="card-img"
+            alt="resumade homepage"></img>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl text-gray-200 mb-2 ">
+              Resumade
+            </div>
+            <p className="text-gray-200 text-base ">
+              A resume generator application. After signing up or logging, the user will be able to access the dashboard where they can add, edit or download their resume. To add a new resume, users can simply click on the 'new resume' button and is prompted to fill out the forms. Their resume will be generated at the end and saved to their account, where it can be accessed again through the dashboard.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <a
+              href="https://github.com/PeytonCast/ResuMade"
+              className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-teal-500 hover:bg-teal-200">
+              GitHub Repo
+            </a>
+            <a
+              href="https://resumade.herokuapp.com/"
+              className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-teal-500 hover:bg-teal-200">
+              Deployed App
+            </a>
+            <br></br>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+              #MERN
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+              #Ant Design
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+              #CSS
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+              #DOCX
+            </span>
+          </div>
+        </div>
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
@@ -188,49 +229,13 @@ export default function Portfolio() {
             </span>
           </div>
         </div>
-        <div className="max-w-s overflow-hidden rounded border border-gray-800">
-          <img
-            className="w-full"
-            src="https://user-images.githubusercontent.com/105574653/182054630-480edf3f-c280-443a-a217-04640d56df51.png"
-            id="card-img"
-            alt="code quiz img"></img>
-          <div className="px-6 py-4">
-            <div className="font-bold text-xl text-gray-200 mb-2 ">
-              Code Quiz
-            </div>
-            <p className="text-gray-200 text-base ">
-              A fun and interactive quiz game created with JavaScript.
-            </p>
-          </div>
-          <div className="px-6 pt-4 pb-2">
-            <a
-              href="https://github.com/KatSKang/Code-Quiz"
-              className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-teal-500 hover:bg-teal-200">
-              GitHub Repo
-            </a>
-            <a
-              href="https://katskang.github.io/Code-Quiz/"
-              className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 bg-teal-500 hover:bg-teal-200">
-              Deployed App
-            </a>
-            <br></br>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
-              #JavaScript
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
-              #HTML
-            </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
-              #CSS
-            </span>
-          </div>
-        </div>
+        
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
             src="https://user-images.githubusercontent.com/105574653/204119858-e66b7aff-6dc9-474b-bf7b-2140dcc83bbe.png"
             id="card-img"
-            alt="team gen img"></img>
+            alt="jate preview"></img>
           <div className="px-6 py-4">
             <div className="font-bold text-xl text-gray-200 mb-2 ">
               J.A.T.E.
