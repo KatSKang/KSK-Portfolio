@@ -1,10 +1,10 @@
 import React from "react";
-import resumade from "../../assets/images/resumade.jpeg"
+import resumade from "../../assets/images/resumade.jpeg";
+import { forwardRef } from "react";
 
-
-export default function Portfolio() {
+const Portfolio = forwardRef((props, ref) => {
   return (
-    <div>
+    <div ref={ref} className="projects">
       <h1 className="text-4xl my-4 border-b text-center text-gray-200">
         My Projects
       </h1>
@@ -20,7 +20,14 @@ export default function Portfolio() {
               Resumade
             </div>
             <p className="text-gray-200 text-base ">
-              A resume generator application. After signing up or logging, the user will be able to access the dashboard where they can add, edit or download their resume. To add a new resume, users can simply click on the 'new resume' button and is prompted to fill out the forms. Their resume will be generated at the end and automatically saved. The user will also have the option to download the file for $5. The resume will be saved to their account, where it can be accessed again through the dashboard.
+              A resume generator application. After signing up or logging, the
+              user will be able to access the dashboard where they can add, edit
+              or download their resume. To add a new resume, users can simply
+              click on the 'new resume' button and is prompted to fill out the
+              forms. Their resume will be generated at the end and automatically
+              saved. The user will also have the option to download the file for
+              $5. The resume will be saved to their account, where it can be
+              accessed again through the dashboard.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
@@ -229,7 +236,7 @@ export default function Portfolio() {
             </span>
           </div>
         </div>
-        
+
         <div className="max-w-s overflow-hidden rounded border border-gray-800">
           <img
             className="w-full"
@@ -276,4 +283,6 @@ export default function Portfolio() {
       </div>
     </div>
   );
-}
+});
+
+export default Portfolio;

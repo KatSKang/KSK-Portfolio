@@ -10,17 +10,20 @@
     }
   }
 
-  * {
+
+  /* * {
     background-color: rgb(11, 16, 27);
-  }
+  } */
 
   #profile-img {
     width: 300px;
     height: 300px;
+    border: 6px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, #23a6d5, #23d5ab) border-box;
     border-radius: 50%;
-    outline: 8px;
+    /* outline: 8px;
     outline-style:solid;
-    outline-color: rgb(20, 184, 166);
+    outline-color: rgb(20, 184, 166); */
   }
 
   /* #card-img {

@@ -1,62 +1,38 @@
 import React from "react";
-import { Route, Routes, Link } from "react-router-dom";
+// import { Route, Routes, Link } from "react-router-dom";
+// import Header from "./Header";
+// import Portfolio from "./pages/Portfolio";
+// import About from "./pages/About";
+// import Resume from "./pages/Resume";
+// import Contact from "./pages/Contact";
 
-import Header from "./Header";
-import Portfolio from "./pages/Portfolio";
-import About from "./pages/About";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
-
-export default function Navbar() {
+export default function Navbar({ nav }) {
   return (
     <>
       <nav>
-        <div className="flex justify-center mr-auto text-center py-4 px-6 text-white w-full">
-          <p>
-            <Link
-              to="/KKang-React-Portfolio/"
-              className="text-lg no-underline hover:text-teal-500 mx-2">
-              About Me
-            </Link>
-          </p>
-          <p>
-            <Link
-              to="/KKang-React-Portfolio/portfolio"
-              className="text-lg no-underline hover:text-teal-500 mx-2">
-              Portfolio
-            </Link>
-          </p>
-          <p>
-            <Link
-              to="/KKang-React-Portfolio/resume"
-              className="text-lg no-underline hover:text-teal-500 mx-2">
-              Resume
-            </Link>
-          </p>
-          <p>
-            <Link
-              to="/KKang-React-Portfolio/contact"
-              className="text-lg no-underline hover:text-teal-500 mx-2">
-              Contact
-            </Link>
-          </p>
-        </div>
+        <ul className="flex justify-center mr-auto text-center py-4 px-6 text-gray-800 w-full">
+          <li
+            onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
+            className="link cursor-pointer text-lg no-underline hover:text-[#ee7752] mx-2">
+            About Me
+          </li>
+          <li
+            onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
+            className="link text-lg no-underline hover:text-[#e73c7e] mx-2">
+            Projects
+          </li>
+          <li
+            onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
+            className="link text-lg no-underline hover:text-[#23a6d5] mx-2">
+            Resume
+          </li>
+          <li
+            onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
+            className="link text-lg no-underline hover:text-[#23d5ab] mx-2">
+            Contact
+          </li>
+        </ul>
       </nav>
-
-      <Header />
-
-      <Routes>
-        <Route path="/KKang-React-Portfolio/" element={<About />}></Route>
-        <Route
-          path="/KKang-React-Portfolio/portfolio"
-          element={<Portfolio />}></Route>
-        <Route
-          path="/KKang-React-Portfolio/resume"
-          element={<Resume />}></Route>
-        <Route
-          path="/KKang-React-Portfolio/contact"
-          element={<Contact />}></Route>
-      </Routes>
     </>
   );
 }
