@@ -3,39 +3,47 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import "./header.css";
 import profile1 from "../assets/images/profile1.jpg";
+import { Button, ButtonGroup } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 export default function Header() {
+  const handleClickScroll = () => {
+    const el = document.getElementById("about");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div
-      className="hero relative overflow-hidden"
-      style={{
-        height: 800,
-      }}>
+    <motion.div className="hero">
       <div
-        className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
-        style={{ backgroundColor: `rgba(0, 0, 0, 0.6)` }}>
-        <div className="grid h-full max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-          <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl mb-4 text-white text-9xl font-extrabold tracking-tight leading-none xl:text-[9rem]">
-              Kathy
-            </h1>
-            <h1 className="max-w-2xl pb-10 text-white text-9xl font-extrabold tracking-tight leading-none xl:text-[9rem] border-b">
-              Kang
-            </h1>
-            <p className="mt-6 text-xl text-gray-200">full stack</p>
-            <h2 className="max-w-2xl font-medium text-gray-200 lg:mb-8 md:text-lg lg:text-4xl">
-              web developer
-            </h2>
-          </div>
-          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        className="flex grid place-content-center top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed text-white"
+        style={{ backgroundColor: `rgba(0, 0, 0, 0.6)` }}
+        intial={{ opacity: 0 }}
+        animate={{ x: 100 }}
+        exit={{ opacity: 0 }}>
+        <h2 className="mb-4 xl:p-0 p-8 text-3xl font-bold">Hi, my name is</h2>
+        <h1 className="mb-10 xl:p-0 p-8 text-9xl font-bold">Kathy Kang</h1>
+        <h2 className="mb-10 xl:px-0 px-8 text-4xl">
+          I'm a Full Stack Developer with a focus on front-end development and
+          UX/UI.
+        </h2>
+        <button
+          className="xl:px-0 px-8 bg-transparent hover:border-opacity-50 w-32 font-bold py-2 px-4 border border-white rounded"
+          onClick={handleClickScroll}>
+          About me
+        </button>
+        {/* <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
               src={profile1}
-              style={{ height: 640, borderRadius: 360 }}
+              style={{
+                height: 400,
+                borderRadius: "50%",
+              }}
               alt="pic"></img>
-          </div>
-        </div>
+          </div> */}
       </div>
-    </div>
+    </motion.div>
 
     // <div className="w-full h-100 text-gray-200 mb-10 justify-center text-center">
     //   <div className="">
