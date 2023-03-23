@@ -22,14 +22,16 @@ export default function Header() {
         intial={{ opacity: 0 }}
         animate={{ x: 100 }}
         exit={{ opacity: 0 }}>
-        <h2 className="mb-4 xl:p-0 p-8 text-3xl font-bold">Hi, my name is</h2>
-        <h1 className="mb-10 xl:p-0 p-8 text-9xl font-bold">Kathy Kang</h1>
+        <h2 className="mb-4 xl:p-0 p-8 text-3xl font-bold min-[320px]:mb-0">
+          Hi, my name is
+        </h2>
+        <h1 className="mb-5 xl:p-0 p-8 text-9xl font-bold">Kathy Kang</h1>
         <h2 className="mb-10 xl:px-0 px-8 text-4xl">
           I'm a Full Stack Developer with a focus on front-end development and
           UX/UI.
         </h2>
         <button
-          className="xl:px-0 px-8 bg-transparent hover:border-opacity-50 w-32 font-bold py-2 px-4 border border-white rounded"
+          className="xl:px-0 bg-transparent hover:border-opacity-50 w-32 font-bold py-2 px-4 border border-white rounded min-[320px]:ml-8"
           onClick={handleClickScroll}>
           About me
         </button>

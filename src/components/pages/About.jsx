@@ -3,18 +3,21 @@ import { forwardRef } from "react";
 
 const About = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="about my-64 h-800" id="about">
-      <div className="grid h-full max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="font-bold text-black lg:mb-8 md:text-lg lg:text-8xl">
-            ABOUT ME
+    <div
+      ref={ref}
+      className="about md:my-96 h-800 min-[320px]:my-32"
+      id="about">
+      <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
+        <div className="place-self-center col-span-2">
+          <h1 className="font-bold text-neutral-900 lg:mb-8 sm:text-6xl lg:text-8xl min-[320px]:text-4xl bg-white">
+            WHO AM I?
           </h1>
         </div>
-        <div className=" lg:mt-0 lg:col-span-5 rounded p-6 shadow-2xl">
-          <h2 className="max-w-2xl font-medium text-gray-800 lg:mb-8 md:text-lg lg:text-4xl border-b border-gray-800">
+        <div className=" place-self-center col-span-3">
+          {/* <h2 className="max-w-2xl font-medium text-gray-800 sm:mb-4 sm:text-2xl lg:text-4xl border-b border-gray-800">
             Who am I?
-          </h2>
-          <p className="text-l mb-4">
+          </h2> */}
+          <p className="text-neutral-800 text-l mb-4">
             I am a recent graduate of Georgia Tech's coding boot camp and have
             received my certificate in Full Stack Web Development in December
             2022. I have an interest in front-end development and creating
@@ -22,7 +25,7 @@ const About = forwardRef((props, ref) => {
             users with simple, straightforward designs and responsive
             experiences.
           </p>
-          <p className="text-l">
+          <p className="text-neutral-800 text-l">
             I've always had an interest in computers and technology, but never
             thought of pursuing it as a career until recently due to the
             Covid-19 pandemic. Although I am new to the tech industry, I have
