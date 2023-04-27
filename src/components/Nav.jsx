@@ -10,7 +10,7 @@ export default function Navbar({ nav }) {
   return (
     <>
       <nav>
-        <ul className="flex justify-center mr-auto text-center py-4 px-6 text-gray-800 w-full">
+        <ul className="flex justify-center mr-auto text-center py-4 px-6 text-gray-200 w-full bg-transparent">
           <li
             onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
             className="link cursor-pointer text-lg no-underline hover:text-[#ee7752] mx-2">

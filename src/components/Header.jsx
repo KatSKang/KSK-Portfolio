@@ -5,6 +5,7 @@ import "./header.css";
 import profile1 from "../assets/images/profile1.jpg";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Navbar from "./Nav";
 
 export default function Header() {
   const handleClickScroll = () => {
@@ -17,21 +18,23 @@ export default function Header() {
   return (
     <motion.div className="hero">
       <div
-        className="flex grid place-content-center top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed text-white"
+        className="top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed text-white"
         style={{ backgroundColor: `rgba(0, 0, 0, 0.6)` }}
         intial={{ opacity: 0 }}
         animate={{ x: 100 }}
         exit={{ opacity: 0 }}>
+          <Navbar />
+      <div className="flex grid place-content-center w-full h-full overflow-hidden">
         <h2 className="mb-4 xl:p-0 p-8 text-3xl font-bold min-[320px]:mb-0">
-          Hi, my name is
+          Hi there, my name is
         </h2>
         <h1 className="mb-5 xl:p-0 p-8 text-9xl font-bold">Kathy Kang</h1>
-        <h2 className="mb-10 xl:px-0 px-8 text-4xl">
+        <h2 className="mb-10 xl:px-0 px-8 text-3xl">
           I'm a Full Stack Developer with a focus on front-end development and
-          UX/UI.
+          UI/UX design.
         </h2>
         <button
-          className="xl:px-0 bg-transparent hover:border-opacity-50 w-32 font-bold py-2 px-4 border border-white rounded min-[320px]:ml-8"
+          className="xl:px-0 bg-white text-gray-800 hover:bg-transparent hover:text-white w-32 font-bold py-2 px-4 border border-white rounded-full min-[320px]:ml-8"
           onClick={handleClickScroll}>
           About me
         </button>
@@ -44,6 +47,7 @@ export default function Header() {
               }}
               alt="pic"></img>
           </div> */}
+          </div>
       </div>
     </motion.div>
 
