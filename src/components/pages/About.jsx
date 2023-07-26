@@ -3,18 +3,15 @@ import { forwardRef } from "react";
 
 const About = forwardRef((props, ref) => {
   return (
-    <div
-      ref={ref}
-      className="about md:my-72 h-800 min-[320px]:my-32"
-      id="about">
+    <div ref={ref} className="about h-800 min-[320px]:my-32" id="about">
       <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
         <div className="place-self-center col-span-2">
-          <h1 className="font-bold text-zinc-900 lg:mb-8 sm:text-6xl lg:text-8xl min-[320px]:text-4xl">
+          <h1 className="font-bold text-zinc-900 lg:mb-8 sm:text-6xl lg:text-8xl min-[320px]:text-4xl tracking-wide">
             WHO AM I?
           </h1>
         </div>
         <div className="about-text place-self-center col-span-3 ">
-          <p className="text-zinc-200 text-l mt-6 px-3 py-6">
+          <p className="text-zinc-300 text-l mt-6 px-3 py-6 tracking-wide">
             I am a recent graduate of Georgia Tech's coding boot camp and have
             received my certificate in Full Stack Web Development in December
             2022. I have an interest in front-end development and creating
@@ -22,7 +19,7 @@ const About = forwardRef((props, ref) => {
             users with simple, straightforward designs and responsive
             experiences.
           </p>
-          <p className="text-zinc-200 text-l p-3">
+          <p className="text-zinc-300 text-l p-3 tracking-wide">
             I've always had an interest in computers and technology, but never
             thought of pursuing it as a career until recently. Although I am new
             to the tech industry, I have years of experience in customer

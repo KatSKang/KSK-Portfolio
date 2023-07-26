@@ -6,14 +6,14 @@ import { forwardRef } from "react";
 const Portfolio = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="projects" id="projects">
-      <h1 className="font-bold text-center text-zinc-900 lg:mb-4 sm:text-4xl lg:text-6xl min-[320px]:text-5xl">
+      <h4 className="font-bold text-center text-zinc-900 lg:mb-4 sm:text-4xl lg:text-6xl min-[320px]:text-5xl tracking-wide">
         PROJECTS
-      </h1>
+      </h4>
       {/* RESUMADE */}
       <div>
-        <div className="grid md:grid-cols-3 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1 max-w-s overflow-hidden my-12 mx-6 border-2 border-zinc-900 hover:border-4">
-          <div className="text-xl text-zinc-800 col-span-1">
-            <h1 className="font-extrabold text-zinc-900 mb-4">Resumade</h1>
+        <div className="grid md:grid-cols-3 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1 max-w-s overflow-hidden my-12 mx-6 border-2 border-zinc-900 bg-zinc-100">
+          <div className="text-xl text-zinc-800 col-span-1 tracking-wide">
+            <h1 className="font-extrabold text-zinc-900 mb-4">ResuMade</h1>
             <p className="text-base">
               A React based application where users can generate a resume after
               completing a multistep questionnaire form. Main features include a
@@ -23,24 +23,24 @@ const Portfolio = forwardRef((props, ref) => {
               UI/UX design for the website.
             </p>
             <br></br>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+            <span className="inline-block bg-[#d4776b] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
               #MERN Stack
             </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
+            <span className="inline-block bg-[#d4776b] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 ">
               #JSX
             </span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-8">
+            <span className="inline-block bg-[#d4776b] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-8">
               #Ant Design
             </span>
             <br></br>
             <a
               href="https://resumade.herokuapp.com/"
-              className="inline-block rounded-lg px-3 py-1 text-base font-semibold text-indigo-700 mr-4 bg-white hover:bg-indigo-700 hover:text-indigo-200 border border-indigo-500">
+              className="inline-block rounded-lg px-3 py-1 text-base font-semibold text-zinc-900 mr-4 bg-white hover:text-[#d4776b] hover:bg-zinc-900 border border-zinc-900">
               See Live
             </a>
             <a
               href="https://github.com/PeytonCast/ResuMade"
-              className="inline-blockpx-3 py-2 text-base font-semibold text-indigo-700 hover:text-indigo-400">
+              className="inline-blockpx-3 py-2 text-base font-semibold text-zinc-900 hover:text-[#d4776b]">
               Source Code
             </a>
           </div>
