@@ -1,44 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Route, Routes, Link } from "react-router-dom";
-// import Header from "./Header";
-// import Portfolio from "./pages/Portfolio";
-// import About from "./pages/About";
-// import Resume from "./pages/Resume";
-// import Contact from "./pages/Contact";
-import logo from "../assets/images/logo.png";
+import { Link } from "react-scroll";
 
-export default function Navbar({ nav }) {
+const NavBar = () => {
+  const navLinks = [
+    {
+      id: 1,
+      link: "home",
+    },
+    {
+      id: 2,
+      link: "about",
+    },
+    {
+      id: 3,
+      link: "skills",
+    },
+    {
+      id: 4,
+      link: "works",
+    },
+    {
+      id: 5,
+      link: "contact",
+    },
+  ];
+
   return (
-    <nav>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 hamburger-menu">
-        <a href="/" class="flex items-center">
-          <img src={logo} class="h-8 mr-3" alt="KK logo" />
-        </a>
-        <div clasName="">
-          <ul className="flex justify-end mr-auto py-4 px-6 text-zinc-900 w-full text-light hidden space-x-8 lg:flex">
-            <li
-              onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
-              className="link cursor-pointer no-underline hover:underline mx-2">
-              About
-            </li>
-            <li
-              onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
-              className="link cursor-pointer no-underline hover:underline mx-2">
-              Projects
-            </li>
-            <li
-              onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
-              className="link cursor-pointer no-underline hover:underline mx-2">
-              Resume
-            </li>
-            <li
-              onClick={() => nav.current.scrollIntoView({ behavior: "smooth" })}
-              className="link cursor-pointer no-underline hover:underline mx-2">
-              Contact
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav className="fixed right-2 top-2 z-50 w-16 bg-[#c3a29e]/50 text-zinc-900 flex flex-col px-2 rounded-lg border-l">
+      <ul className="flex flex-col w-full">
+        {navLinks.map(({ id, link }) => (
+          <li
+            key={id}
+            className="hover:text-zinc-100 text-s cursor-pointer py-2"
+          >
+            <Link to={link} smooth duration={700} offset={-72}>
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
-}
+};
+
+export default NavBar;
