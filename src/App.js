@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar nav={about} />
+      {/* <Navbar nav={about} /> */}
       <Header />
       <About ref={about} />
       <Skills ref={skills} />
