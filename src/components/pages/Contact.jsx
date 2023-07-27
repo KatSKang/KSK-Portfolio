@@ -24,8 +24,8 @@ const Contact = () => {
   if (submitted) {
     return (
       <>
-        <div className="text-2xl text-center text-gray-200">Thank you!</div>
-        <div className="text-md text-center text-gray-200">
+        <div className="text-2xl text-center text-zinc-900">Thank you!</div>
+        <div className="text-md text-center text-zinc-900">
           We'll be in touch soon.
         </div>
       </>
@@ -110,7 +110,6 @@ const Contact = () => {
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
-            target="_blank"
             className="space-y-8">
             <div>
               <label for="name" className={labelStyle}>
