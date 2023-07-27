@@ -13,6 +13,9 @@ const listStyle = "py-2 leading-loose font-bold";
 const colTitleStyle =
   "skill-top font-bold text-zinc-200 text-3xl flex justify-center items-center tracking-wide";
 
+const btnStyle =
+  "bg-zinc-900 text-zinc-200 hover:bg-zinc-200 hover:text-zinc-900 py-2 px-4 rounded-md transition ease-in-out duration-300";
+
 const Skills = forwardRef((props, ref) => {
   return (
     <div
@@ -77,8 +80,8 @@ const Skills = forwardRef((props, ref) => {
         <a
           href={resume}
           target="_blank"
-          rel="resume"
-          className="bg-zinc-900 text-zinc-200 hover:bg-zinc-200 hover:text-zinc-900 font-bold py-2 px-4 rounded-md transition ease-in-out duration-300">
+          rel="noopener noreferrer"
+          className={btnStyle}>
           View My Resume
         </a>
       </div>
