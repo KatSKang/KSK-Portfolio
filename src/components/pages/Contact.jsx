@@ -22,7 +22,7 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <div id="contact">
       <h1 className="text-4xl my-4 border-b text-center text-gray-200">
         Contact Me
       </h1>

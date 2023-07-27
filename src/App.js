@@ -22,7 +22,7 @@ function App() {
       <About ref={about} />
       <Skills ref={skills} />
       <Projects ref={projects} />
-      <Contact />
+      <Contact ref={contact} />
       <Footer />
     </div>
   );

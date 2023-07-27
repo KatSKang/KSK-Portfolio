@@ -20,8 +20,7 @@ export default function Header() {
               height: 300,
               borderRadius: "50%",
             }}
-            alt="pic"
-          ></img>
+            alt="pic"></img>
         </div>
         <div className="mx-auto place-self-center lg:col-span-7 text-zinc-900">
           <p className="max-w-2xl mb-2 font-bold md:text-lg lg:text-xl">
@@ -39,9 +38,8 @@ export default function Header() {
             stack.
           </p>
           <button
-            className="border-zinc-900 bg-zinc-200 font-bold w-34 py-2 px-4 border rounded mr-6"
-            onClick={scrollToProjects}
-          >
+            className="border-zinc-900 bg-zinc-200 font-bold w-34 py-2 px-4 border rounded mr-6 hover:bg-zinc-900 hover:text-zinc-200 transition duration-300"
+            onClick={scrollToProjects}>
             See my works
           </button>
         </div>

@@ -18,7 +18,7 @@ const NavBar = () => {
     },
     {
       id: 4,
-      link: "works",
+      link: "projects",
     },
     {
       id: 5,
@@ -32,9 +32,8 @@ const NavBar = () => {
         {navLinks.map(({ id, link }) => (
           <li
             key={id}
-            className="hover:text-zinc-100 text-s cursor-pointer py-2"
-          >
-            <Link to={link} smooth duration={700} offset={-72}>
+            className="hover:text-zinc-100 text-s cursor-pointer py-2">
+            <Link to={link} smooth duration={1000} delay={100}>
               {link}
             </Link>
           </li>
