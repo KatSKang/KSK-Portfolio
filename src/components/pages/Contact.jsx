@@ -5,7 +5,7 @@ const FORM_ENDPOINT = "https://formsubmit.co/0f1c3850ad75dbf702f5621bc3c51806";
 const titleStyle =
   "font-bold text-zinc-900 lg:mb-8 sm:text-4xl lg:text-5xl min-[320px]:text-4xl uppercase text-center";
 
-const labelStyle = "block mb-2 text-sm font-medium text-zinc-900";
+const labelStyle = "block mb-2 text-sm font-medium text-zinc-200";
 
 const inputStyle =
   "bg-zinc-100 border border-gray-600 text-zinc-900 text-sm rounded-lg block w-full p-2.5";
@@ -95,13 +95,13 @@ const Contact = () => {
     //   </div>
     // </div>
 
-    <div className="h-800 min-[320px]:my-32" id="contact">
+    <div className="h-full bg-zinc-800" id="contact">
       <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
         <div className="place-self-center col-span-2">
-          <h1 className="font-bold text-zinc-900 lg:mb-8 sm:text-5xl lg:text-7xl min-[320px]:text-4xl tracking-wide uppercase">
+          <h1 className="font-bold text-zinc-100 lg:mb-8 sm:text-5xl lg:text-7xl min-[320px]:text-4xl tracking-wide uppercase">
             Contact Me
           </h1>
-          <p className="mb-8 lg:mb-16 font-light text-zinc-900 sm:text-xl">
+          <p className="mb-8 lg:mb-16 font-light text-zinc-200 sm:text-xl">
             Have questions or want to collaborate? Feel free to message me.
           </p>
         </div>

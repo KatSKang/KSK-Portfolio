@@ -16,7 +16,7 @@ function App() {
   const contact = useRef(null);
 
   return (
-    <div className="App">
+    <div className="App scroll-smooth">
       <Navbar />
       <Header />
       <About ref={about} />

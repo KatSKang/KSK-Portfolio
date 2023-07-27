@@ -1,5 +1,5 @@
 {
-  "short_name": "Kathy Kang - Web Developer",
+  "short_name": "Kathy Kang - Web Dev",
   "name": "Kathy Kang - Web Developer",
   "icons": [
     {
@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "apple-touch-icon.png",
       "type": "image/png",
       "sizes": "512x512"
     }

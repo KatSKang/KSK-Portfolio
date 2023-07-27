@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-zinc-900 text-center text-zinc-200 ">
+    <footer className="bg-zinc-900 text-center text-zinc-200 grid justify-items-center">
       <div className="container pt-9">
         <div className="mb-9 flex justify-center">
           <a

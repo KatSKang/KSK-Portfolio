@@ -9,13 +9,13 @@ const titleStyle =
   "font-bold text-zinc-900 lg:mb-8 sm:text-5xl lg:text-7xl min-[320px]:text-4xl tracking-wide uppercase";
 
 const projBoxStyle =
-  "grid md:grid-cols-3 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1 max-w-s overflow-hidden my-12 mx-6 border-2 border-zinc-900 bg-zinc-100 rounded";
+  "grid md:grid-cols-3 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8  my-4 mx-6 min-[320px]:grid-cols-1 max-w-s overflow-hidden bg-zinc-100/50 rounded-lg shadow-lg";
 
 const tagStyle =
-  "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2";
+  "inline-block bg-zinc-200 rounded-full px-3 py-1 text-sm font-semibold text-zinc-700 mr-2 mb-2";
 
 const buttonStyle =
-  "inline-block rounded-lg px-3 py-1 text-base font-semibold text-zinc-900 my-4 mr-4 bg-white hover:text-[#d4776b] hover:bg-zinc-900 border border-zinc-900";
+  "inline-block rounded-lg px-3 py-1 text-base font-semibold text-zinc-900 mt-4 mr-4 bg-white hover:text-[#d4776b] hover:bg-zinc-900 border border-zinc-900";
 
 const linkStyle =
   "inline-blockpx-3 py-2 text-base font-semibold text-zinc-900 hover:text-[#d4776b]";
