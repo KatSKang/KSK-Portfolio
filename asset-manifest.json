@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KSK-Portfolio/static/css/main.c07ced23.css",
-    "main.js": "/KSK-Portfolio/static/js/main.36c64e64.js",
+    "main.css": "/KSK-Portfolio/static/css/main.ef8488d2.css",
+    "main.js": "/KSK-Portfolio/static/js/main.bc7f94c1.js",
     "static/media/meowwoof homepage.png": "/KSK-Portfolio/static/media/meowwoof homepage.fed35fe6e4f60b90d28d.png",
     "static/media/resumade.jpeg": "/KSK-Portfolio/static/media/resumade.999d295c8fc9b2095274.jpeg",
     "static/media/Kathy Kang Resume.pdf": "/KSK-Portfolio/static/media/Kathy Kang Resume.56362673e847fad25f09.pdf",
@@ -10,11 +10,11 @@
     "static/media/display.svg": "/KSK-Portfolio/static/media/display.7e7ec7e34ff02a52569953e88cc650d2.svg",
     "static/media/code-slash.svg": "/KSK-Portfolio/static/media/code-slash.5345c20792dcb7ee36c0eb3c015a6334.svg",
     "static/media/code.svg": "/KSK-Portfolio/static/media/code.c0f1ff66a5c74b1dc99835687ea8f9a3.svg",
-    "main.c07ced23.css.map": "/KSK-Portfolio/static/css/main.c07ced23.css.map",
-    "main.36c64e64.js.map": "/KSK-Portfolio/static/js/main.36c64e64.js.map"
+    "main.ef8488d2.css.map": "/KSK-Portfolio/static/css/main.ef8488d2.css.map",
+    "main.bc7f94c1.js.map": "/KSK-Portfolio/static/js/main.bc7f94c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.c07ced23.css",
-    "static/js/main.36c64e64.js"
+    "static/css/main.ef8488d2.css",
+    "static/js/main.bc7f94c1.js"
   ]
 }
