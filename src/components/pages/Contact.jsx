@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const FORM_ENDPOINT = "https://formsubmit.co/0f1c3850ad75dbf702f5621bc3c51806";
 
@@ -13,6 +15,11 @@ const inputStyle =
 const btnStyle =
   "bg-zinc-900 text-zinc-200  hover:bg-zinc-200 hover:text-zinc-900 py-2 px-4 rounded-md transition ease-in-out duration-300";
 
+const boxVariant = {
+  visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, x: 2 },
+};
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -20,6 +27,17 @@ const Contact = () => {
       setSubmitted(true);
     }, 100);
   };
+
+  const control = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
 
   if (submitted) {
     return (
@@ -33,69 +51,14 @@ const Contact = () => {
   }
 
   return (
-    // <div id="contact" className="h-800 min-[320px]:my-32">
-    //   <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
-    //     <div className="place-self-center col-span-2"></div>
-    //     <h2 className={titleStyle}>Contact Me</h2>
-    //     <p className="mb-8 lg:mb-16 font-light text-center text-zinc-900 sm:text-xl">
-    //       Have questions or want to collaborate? Feel free to message me.
-    //     </p>
-    //   </div>
-    //   <div className="about-text place-self-center col-span-3 ">
-    //     <form
-    //       action={FORM_ENDPOINT}
-    //       onSubmit={handleSubmit}
-    //       method="POST"
-    //       target="_blank"
-    //       className="space-y-8">
-    //       <div>
-    //         <label
-    //           for="name"
-    //           className="block mb-2 text-sm font-medium text-gray-300">
-    //           Your Name
-    //         </label>
-    //         <input
-    //           type="text"
-    //           name="name"
-    //           className="bg-gray-300 border border-gray-600 text-gray-900 text-sm rounded-lg block w-full p-2.5"
-    //           placeholder=""
-    //           required></input>
-    //       </div>
-    //       <div>
-    //         <label
-    //           for="email"
-    //           className="block mb-2 text-sm font-medium text-gray-300">
-    //           Email
-    //         </label>
-    //         <input
-    //           type="email"
-    //           name="email"
-    //           className="bg-gray-300 border border-gray-600 text-gray-900 text-sm rounded-lg block w-full p-2.5"
-    //           placeholder=""
-    //           required></input>
-    //       </div>
-    //       <div className="sm:col-span-2">
-    //         <label
-    //           for="message"
-    //           className="block mb-2 text-sm font-medium text-gray-300">
-    //           Message
-    //         </label>
-    //         <textarea
-    //           name="message"
-    //           rows="6"
-    //           className="bg-gray-300 border border-gray-600 text-gray-900 text-sm rounded-lg block w-full p-2.5"
-    //           placeholder="Leave a comment..."></textarea>
-    //       </div>
-    //       <button
-    //         type="submit"
-    //         className="py-3 px-5 text-sm font-medium text-center text-gray-900 rounded-lg bg-teal-500 sm:w-fit hover:bg-teal-300">
-    //         Send message
-    //       </button>
-    //     </form>
-    //   </div>
-    // </div>
-
-    <div className="h-full bg-zinc-800" id="contact">
+    <motion.div
+      className="h-full bg-zinc-800"
+      id="contact"
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
         <div className="place-self-center col-span-2">
           <h1 className="font-bold text-zinc-100 lg:mb-8 sm:text-5xl lg:text-7xl min-[320px]:text-4xl tracking-wide uppercase">
@@ -110,7 +73,8 @@ const Contact = () => {
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
-            className="space-y-8">
+            className="space-y-8"
+          >
             <div>
               <label for="name" className={labelStyle}>
                 Your Name
@@ -120,7 +84,8 @@ const Contact = () => {
                 name="name"
                 className={inputStyle}
                 placeholder=""
-                required></input>
+                required
+              ></input>
             </div>
             <div>
               <label for="email" className={labelStyle}>
@@ -131,7 +96,8 @@ const Contact = () => {
                 name="email"
                 className={inputStyle}
                 placeholder=""
-                required></input>
+                required
+              ></input>
             </div>
             <div className="sm:col-span-2">
               <label for="message" className={labelStyle}>
@@ -141,7 +107,8 @@ const Contact = () => {
                 name="message"
                 rows="6"
                 className={inputStyle}
-                placeholder="Leave a comment..."></textarea>
+                placeholder="Leave a comment..."
+              ></textarea>
             </div>
             <button type="submit" className={btnStyle}>
               Send message
@@ -149,7 +116,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

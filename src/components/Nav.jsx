@@ -27,7 +27,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="fixed right-2 top-2 z-50 w-16 bg-[#f7c6ca]/50 text-zinc-900 flex flex-col px-2 rounded-lg border-l">
+    <nav className="fixed right-2 top-2 z-50 w-18 bg-paz-200/50 text-zinc-900 flex flex-col px-2 rounded-lg border-l">
       <ul className="flex flex-col w-full">
         {navLinks.map(({ id, link }) => (
           <li

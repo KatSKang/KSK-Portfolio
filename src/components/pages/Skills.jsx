@@ -21,8 +21,13 @@ const lang = "Python";
 const goals = "Java, Typescript, Vue, Angular, PHP, AWS";
 
 const boxVariant = {
-  visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 2 } },
   hidden: { opacity: 0, y: 200 },
+};
+
+const btnVariant = {
+  visible: { opacity: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0 },
 };
 
 const Skills = () => {
@@ -122,7 +127,13 @@ const Skills = () => {
           Future goals: <span className="font-normal">{goals}</span>
         </p>
 
-        <div className="my-12">
+        <motion.div
+          className="my-12"
+          ref={ref}
+          variants={boxVariant}
+          initial="hidden"
+          animate={control}
+        >
           <a
             href={resume}
             target="_blank"
@@ -131,7 +142,7 @@ const Skills = () => {
           >
             View My Resume
           </a>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );
