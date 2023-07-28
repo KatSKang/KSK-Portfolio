@@ -27,12 +27,13 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="fixed right-2 top-2 z-50 w-16 bg-[#c3a29e]/50 text-zinc-900 flex flex-col px-2 rounded-lg border-l">
+    <nav className="fixed right-2 top-2 z-50 w-16 bg-[#f7c6ca]/50 text-zinc-900 flex flex-col px-2 rounded-lg border-l">
       <ul className="flex flex-col w-full">
         {navLinks.map(({ id, link }) => (
           <li
             key={id}
-            className="hover:text-zinc-100 text-s cursor-pointer py-2">
+            className="hover:text-zinc-100 text-s cursor-pointer py-2"
+          >
             <Link to={link} smooth duration={1000} delay={100}>
               {link}
             </Link>

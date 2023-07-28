@@ -24,19 +24,20 @@ export default function Header() {
   }, [index]);
 
   return (
-    <div className="hero" id="home">
-      <div className="grid max-w-screen-xl px-4 mx-auto h-screen min-[320px]:my-32 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <div className="hero relative overflow-hidden bg-cover" id="home">
+      <div className="grid max-w-screen-xl px-4 mx-auto min-[320px]:my-32 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="hidden place-self-center lg:mt-0 lg:col-span-5 lg:flex">
-          <img
+          {/* <img
             src={profile1}
             style={{
               height: 300,
               borderRadius: "50%",
             }}
-            alt="pic"></img>
+            alt="pic"
+          ></img> */}
         </div>
         <div className="mx-auto place-self-center lg:col-span-7 text-zinc-900">
-          <p className="max-w-2xl mb-2 tracking-wide font-extrabold text-xl">
+          <p className="max-w-2xl mb-2 tracking-wide font-extrabold text-xl updown">
             Welcome to my portfolio
           </p>
           <h1 className="max-w-2xl mb-4 text-5xl lg:text-8xl font-extrabold">
@@ -51,8 +52,9 @@ export default function Header() {
             stack.
           </p>
           <button
-            className="border-zinc-900 bg-zinc-200 font-bold w-34 py-2 px-4 border rounded-lg mr-6 hover:bg-zinc-900 hover:text-zinc-200 transition duration-300"
-            onClick={scrollToProjects}>
+            className="border-zinc-900 bg-zinc-100 font-bold w-34 py-2 px-4 border rounded-lg mr-6 hover:bg-zinc-900 hover:text-zinc-200 transition duration-300"
+            onClick={scrollToProjects}
+          >
             See my works
           </button>
         </div>
