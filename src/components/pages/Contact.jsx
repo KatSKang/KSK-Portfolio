@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 const FORM_ENDPOINT = "https://formsubmit.co/0f1c3850ad75dbf702f5621bc3c51806";
 
 const titleStyle =
-  "font-bold text-zinc-900 lg:mb-8 sm:text-4xl lg:text-5xl min-[320px]:text-4xl uppercase text-center";
+  "font-bold text-zinc-100 sm:mb-4 lg:mb-8 sm:text-4xl md:text-5xl lg:text-7xl tracking-wide uppercase";
 
 const labelStyle = "block mb-2 text-sm font-medium text-zinc-200";
 
@@ -57,24 +57,20 @@ const Contact = () => {
       ref={ref}
       variants={boxVariant}
       initial="hidden"
-      animate={control}
-    >
-      <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto min-[320px]:grid-cols-1">
+      animate={control}>
+      <div className="grid md:grid-cols-5 sm:gap-8 lg:gap-12 h-full max-w-screen-xl px-8 py-8 mx-auto max-sm:grid-cols-1">
         <div className="place-self-center col-span-2">
-          <h1 className="font-bold text-zinc-100 lg:mb-8 sm:text-5xl lg:text-7xl min-[320px]:text-4xl tracking-wide uppercase">
-            Contact Me
-          </h1>
-          <p className="mb-8 lg:mb-16 font-light text-zinc-200 sm:text-xl">
+          <h1 className={titleStyle}>Contact Me</h1>
+          <p className="mb-8 lg:mb-16 font-light text-zinc-200 md:text-l lg:text-xl">
             Have questions or want to collaborate? Feel free to message me.
           </p>
         </div>
-        <div className="place-self-center col-span-3 w-[32rem]">
+        <div className="place-self-center col-span-3 lg:w-[32rem] md:w-72">
           <form
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
-            className="space-y-8"
-          >
+            className="space-y-4">
             <div>
               <label for="name" className={labelStyle}>
                 Your Name
@@ -84,8 +80,7 @@ const Contact = () => {
                 name="name"
                 className={inputStyle}
                 placeholder=""
-                required
-              ></input>
+                required></input>
             </div>
             <div>
               <label for="email" className={labelStyle}>
@@ -96,10 +91,9 @@ const Contact = () => {
                 name="email"
                 className={inputStyle}
                 placeholder=""
-                required
-              ></input>
+                required></input>
             </div>
-            <div className="sm:col-span-2">
+            <div>
               <label for="message" className={labelStyle}>
                 Message
               </label>
@@ -107,8 +101,7 @@ const Contact = () => {
                 name="message"
                 rows="6"
                 className={inputStyle}
-                placeholder="Leave a comment..."
-              ></textarea>
+                placeholder="Leave a comment..."></textarea>
             </div>
             <button type="submit" className={btnStyle}>
               Send message

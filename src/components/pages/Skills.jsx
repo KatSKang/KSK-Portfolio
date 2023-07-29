@@ -48,20 +48,18 @@ const Skills = () => {
       ref={ref}
       variants={boxVariant}
       initial="hidden"
-      animate={control}
-    >
+      animate={control}>
       <div
         ref={ref}
-        className="skill-container grid justify-items-center text-center my-24"
-        id="skills"
-      >
+        className="skill-container grid justify-items-center text-center my-24 md:p-4"
+        id="skills">
         <h2 className={titleStyle}>Technical Skills</h2>
         <p>
           These are the technologies I have the most experience in. However, I
           am always open to learning new technologies and languages.{" "}
         </p>
 
-        <div className="grid grid-cols-3 m-8 skill-box max-w-7xl text-center">
+        <div className="grid grid-cols-3 m-8 skill-box max-w-7xl text-center max-sm:grid-cols-1">
           <div className="skill-col">
             <h3 className={colTitleStyle}>
               <img src={codeIcon1} alt="Code Icon" />
@@ -99,8 +97,7 @@ const Skills = () => {
           </div>
           <div className="skill-col">
             <h3 className={colTitleStyle}>
-              <img src={codeIcon3} alt="Code Icon" />
-              Other skills
+              <img src={codeIcon3} alt="Code Icon" /> Other
             </h3>
             <p className="tracking-wide italic p-2">
               Various roles in development including:
@@ -132,14 +129,12 @@ const Skills = () => {
           ref={ref}
           variants={boxVariant}
           initial="hidden"
-          animate={control}
-        >
+          animate={control}>
           <a
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
-            className={btnStyle}
-          >
+            className={btnStyle}>
             View My Resume
           </a>
         </motion.div>

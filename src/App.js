@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/pages/About";
-import Projects from "./components/pages/Portfolio";
+import Projects from "./components/pages/Projects";
 import Skills from "./components/pages/Skills";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
